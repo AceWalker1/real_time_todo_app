@@ -18,6 +18,7 @@ defmodule RealTimeTodoAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/todo", TodoLiveController
   end
 
   # Other scopes may use custom stacks.
